@@ -31,3 +31,6 @@ Content-Type: application/json
     "name" :"Amazing Maya" 
 }
 
+###
+
+GET https://node-subscriber-api.herokuapp.com/subscribers HTTP/1.1

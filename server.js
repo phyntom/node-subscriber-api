@@ -21,18 +21,9 @@ db.on('open', () => console.log('Connected to the db'));
 
 app.use(express.json());
 
-// app.use('/', (req, res, next) => {
-//    if (req.headers.key == null) {
-//       res.status(401).json({ message: 'Authorization error' });
-//       return;
-//    } else {
-//       if (req.headers.key !== '5f76ada3a5e4f3269fc3715c') {
-//          res.status(401).json({ message: 'Invalid authorization key' });
-//       } else {
-//          next();
-//       }
-//    }
-// });
+app.get('/', (req, res) => {
+   res.send('Hello World!');
+});
 
 app.use('/subscribers', subscribersRouter);
 
