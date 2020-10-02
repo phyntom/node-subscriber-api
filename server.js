@@ -6,6 +6,8 @@ const subscribersRouter = require('./routes/subscribers');
 
 const app = express();
 
+console.log(process.env.DATABASE_URL);
+
 mongoose.connect(process.env.DATABASE_URL, {
    useNewUrlParser: true,
    useUnifiedTopology: true,

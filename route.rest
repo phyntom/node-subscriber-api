@@ -8,8 +8,8 @@ POST http://localhost:3000/subscribers HTTP/1.1
 Content-Type: application/json
 
 {
-    "name" : "Amazin Maya",
-    "subscribedToChannel": "Web Dev Simplified"
+    "name" : "Great Jayden",
+    "subscribedToChannel": "Traversy Media"
 }
 
 ###
