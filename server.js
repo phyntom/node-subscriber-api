@@ -1,14 +1,12 @@
-require('dotenv').config();
-
 const express = require('express');
 const mongoose = require('mongoose');
 const subscribersRouter = require('./routes/subscribers');
 
 const app = express();
 
-console.log(process.env.DATABASE_URL);
+const database_url = process.env.DATABASE_URL || 'mongodb://127.0.0.1:27017/subscribers';
 
-mongoose.connect(process.env.DATABASE_URL, {
+mongoose.connect(database_url, {
    useNewUrlParser: true,
    useUnifiedTopology: true,
 });
