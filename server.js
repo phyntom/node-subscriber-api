@@ -26,7 +26,13 @@ app.get('/', (req, res) => {
 app.use('/subscribers', subscribersRouter);
 
 const port = process.env.PORT || 3000;
+const ip = process.env.HOST || '0.0.0.0';
 
-app.listen(port, () => {
-   console.log(`Server started on http://127.0.0.1:${port}`);
+app.listen(port, ip, () => {
+   console.log(`
+    ==================================
+    Server is running on ${ip}:${port}
+    Serve from ${__dirname}/${project_folder}
+    ==================================
+    `);
 });
