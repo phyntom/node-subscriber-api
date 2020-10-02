@@ -1,0 +1,33 @@
+GET http://localhost:3000/subscribers HTTP/1.1
+
+###
+GET http://localhost:3000/subscribers/5f76ada3a5e4f3269fc3715c HTTP/1.1
+
+###
+POST http://localhost:3000/subscribers HTTP/1.1
+Content-Type: application/json
+
+{
+    "name" : "Amazin Maya",
+    "subscribedToChannel": "Web Dev Simplified"
+}
+
+###
+DELETE http://localhost:3000/subscribers/5f76b32ac925e0292209c338 HTTP/1.1
+
+###
+PATCH  http://localhost:3000/subscribers/5f76ada3a5e4f3269fc3715c HTTP/1.1
+Content-Type: application/json
+
+{
+    "subscribedToChannel":"Traversy Media"
+}
+
+###
+PATCH  http://localhost:3000/subscribers/5f76b87d1910442b41af24d9 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name" :"Amazing Maya" 
+}
+
