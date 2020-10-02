@@ -32,7 +32,6 @@ app.listen(port, ip, () => {
    console.log(`
     ==================================
     Server is running on ${ip}:${port}
-    Serve from ${__dirname}/${project_folder}
     ==================================
     `);
 });
